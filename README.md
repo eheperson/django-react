@@ -181,3 +181,17 @@ touch src/components/Modal.js
 ```
 
 > 'frontend/src/App.js', 'frontend/src/index.js' and 'frontend/src/components/Modal.js' files are edited and saved as .old files.
+
+# To run project
+
+```
+# open the terminal
+cd django-docker/frontend
+npm start
+
+#open another terminal
+cd django-docker/backend
+
+source ../venv/bin/activate
+python manage.py runserver
+```
