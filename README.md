@@ -10,6 +10,9 @@
   
   <dt>from rest_framework import viewsets</dt>
   <dd>The viewsets base class provides the implementation for CRUD operations by default. This code specifies the serializer_class and the queryset.</dd>
+
+  <dt> axios </dt>
+  <dd> To make requests to the API endpoints on the backend server, you will install a JavaScript library called axios. </dd>
 </dl>
 
 # Setting Up the Django-Backend and API
@@ -160,7 +163,21 @@ npm start
 ```
 # install dependencies for react-frontend
 # bootstrap and reactstrap to provide user interface tools.
-npm install bootstrap@4.6.0 reactstrap@8.9.0 --legacy-peer-deps
-
+npm install bootstra reactstrap --legacy-peer-deps
+npm install axios
+```
 
 ```
+mkdir src/components
+touch src/components/Modal.js
+```
+
+> Then open the frontend/package.json file in your code editor and add a proxy:
+
+```
+...
+"proxy": "http://localhost:8000",
+...
+```
+
+> 'frontend/src/App.js', 'frontend/src/index.js' and 'frontend/src/components/Modal.js' files are edited and saved as .old files.
